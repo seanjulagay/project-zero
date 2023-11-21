@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  // overflow: auto;
+  &:focus {
+    outline: none;
+  }
+  // outline: green dotted 1px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
