@@ -7,11 +7,9 @@
   justify-content: center;
 
   .main-container {
-    // display: flex;
-    // flex-direction: column;
     margin-top: 5rem;
-    // margin-left: -15rem;
     height: 100%;
+    z-index: 1;
 
     .main-title {
       font-family: "Inter", sans-serif;
@@ -20,12 +18,28 @@
       color: white;
     }
 
-    .main-list-item {
-      font-family: "Inter", sans-serif;
-      font-size: 1.6rem;
-      font-weight: 400;
-      color: white;
-      margin-bottom: 2rem;
+    .main-list {
+      *::marker {
+        font-size: 3rem;
+        color: $react-blue;
+      }
+      .main-list-item {
+        font-family: "Inter", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 2rem;
+      }
     }
   }
+}
+
+.react-logo-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15rem;
+  height: 70vh;
+  min-height: 40rem;
 }
